@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaina');
+
+body, h1 {
+    font-family: 'Baloo Bhaina', cursive;
+}
+
+a {
+    color: #65B4FF;
+    text-decoration: none;
+}
+
+.map {
+    background: #2c3e50;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.hide {
+    display: none;
+}
+
+h1.title {
+    position: fixed;
+    top: 10px;
+    z-index: 10;
+    left: 100px;
+    right: 100px;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+}
+
+#vizualization-type {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 11;
+}
