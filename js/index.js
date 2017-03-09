@@ -39,7 +39,8 @@ var maxSessions = -Infinity;
 var maxUsers = -Infinity;
 var uniqueUsers = {};
 
-DATA.forEach(c => {
+DATA.users.forEach(c => {
+    if (c.country === "N/A") { return; }
     c.countryCode = getCountryCode(c.country);
     cNames[c.countryCode] = c.country;
     var arr = countries[c.countryCode] = countries[c.countryCode] || []

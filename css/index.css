@@ -26,7 +26,7 @@ h1.title {
     position: fixed;
     top: 10px;
     z-index: 10;
-    left: 100px;
+    left: 170px;
     right: 100px;
     text-align: center;
     margin: 0;
@@ -38,4 +38,25 @@ h1.title {
     top: 10px;
     left: 10px;
     z-index: 11;
+}
+
+small {
+    font-size: 0.5em;
+    position: relative;
+    top: 20px;
+    left: -70px;
+}
+
+.description {
+    position: fixed;
+    left: 5px;
+    bottom: 5px;
+    background: rgba(255, 255, 255, 0.19);
+    color: white;
+    width: 60%;
+    max-width: 500px;
+    padding: 10px;
+    box-sizing: border-box;
+    line-height: 1.3;
+    border-radius: 2px;
 }
