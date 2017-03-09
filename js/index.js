@@ -32,14 +32,25 @@ function createMap(id, data) {
     });
 }
 
+function formatDate(d) {
+    var months = [
+        'January','February','March',
+        'April','May','June','July',
+        'August','Sepember','October',
+        'November','December'
+    ];
+    return [months[d.getMonth()], d.getDate(), d.getFullYear()].join(" ");
+}
 
 var countries = {};
 var cNames = {};
 var maxSessions = -Infinity;
 var maxUsers = -Infinity;
-var uniqueUsers = {};
+var allUniqueUsers = {};
 
+document.getElementById("last-updated-at").innerHTML = formatDate(DATA.created_at);
 DATA.users.forEach(c => {
+    allUniqueUsers[c.user] = 1;
     if (c.country === "N/A") { return; }
     c.countryCode = getCountryCode(c.country);
     cNames[c.countryCode] = c.country;
@@ -74,6 +85,7 @@ var sessionsData = Object.keys(countries).map(c => {
       , user_count: uniqueUsers
     };
 });
+document.getElementById("happy-people-count").innerHTML = Object.keys(allUniqueUsers).length.toString();
 
 var menteesData = sessionsData.map(function (c) {
     var r = maxRadius * c.user_count / maxUsers;
