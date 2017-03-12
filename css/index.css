@@ -47,16 +47,23 @@ small {
     left: -70px;
 }
 
+.patreon {
+    right: 5px;
+}
+.patreon,
 .description {
     position: fixed;
-    left: 5px;
     bottom: 5px;
     background: rgba(255, 255, 255, 0.19);
     color: white;
-    width: 60%;
-    max-width: 600px;
     padding: 10px;
     box-sizing: border-box;
     line-height: 1.3;
     border-radius: 2px;
+}
+
+.description {
+    left: 5px;
+    width: 60%;
+    max-width: 600px;
 }
