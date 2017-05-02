@@ -783,9 +783,15 @@ function getCountryName (countryCode) {
 }
 
 function getCountryCode (name) {
-if (name === "Singapore") {
-    return "MYS";
-}
-if (name === "Malta") { return "ITA"; }
-    return countryNames[name];
+    const closestLocations = {
+        "Singapore": "MYS"
+      , "Malta": "ITA"
+      , "Mauritius": "MDG"
+      , "Hong Kong": "CHN"
+    };
+    const code = closestLocations[name] || countryNames[name];
+    if (!code) {
+        console.warn("Country not found: " + name);
+    }
+    return code;
 }
