@@ -33,5 +33,13 @@
   "bugs": {
     "url": "https://github.com/IonicaBizau/my-mentees/issues"
   },
-  "homepage": "https://github.com/IonicaBizau/my-mentees#readme"
+  "homepage": "https://github.com/IonicaBizau/my-mentees#readme",
+  "blah": {
+      "ex_img": "https://cdn.filestackcontent.com/m3PZArnFSoyZ7VbeNyhX",
+      "ex_url": "https://ionicabizau.github.io/my-mentees/",
+      "description": [
+          { "h2": "[Story](https://www.codementor.io/johnnyb/the-map-of-my-mentees-7q7aqrktp)" },
+          { "p": "Read the story [here](https://www.codementor.io/johnnyb/the-map-of-my-mentees-7q7aqrktp)." }
+      ]
+  }
 }
